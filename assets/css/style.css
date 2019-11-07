@@ -1,0 +1,259 @@
+
+/* Wrappers and Containers */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: auto;
+  padding:0;
+  margin:0;
+  overflow-x: hidden;
+  background: #444444;
+  background-attachment: white;
+}    
+ 
+.container {  
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.nav-wrapper {
+  background-color: #3DCCC7;
+  color: #ffffff;
+  background-position: center;
+  max-width: 100%;  
+}
+
+.main-wrapper {
+  position: center;
+  width: 100%;
+  height: 100%;
+  font-display: #fff; 
+}
+
+.section {   
+  width: 100%;
+  height: 60%;
+  background: whitesmoke;
+  padding: 20px;
+  margin: 0px;
+  background-color: #ffffff;  
+} 
+
+
+
+.card-title {
+  background-color: dodgerblue;
+  padding: 5px !important;
+  border-radius: 50px;
+  margin: 8px;
+  font-size: 16px !important;
+}
+
+.card {
+  width: 30%;
+  margin: 20px 1%;
+  float: left;
+  display: block;
+  color: black;
+  height: 2% !important;
+}
+
+.latest-news {
+  width: 90%;
+  margin: 10px auto;
+}
+
+/* Icons */
+
+
+
+.fas fa-cloud-sun {
+  shape-image-threshold: unset;
+  size: 9px; 
+}
+
+.brand-logo {
+  position: center !important;
+  height: 100%;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+
+  font-size: 40px;
+  height: 56px;
+  line-height: 56px;
+  position: relative
+
+}
+
+i.large {
+  font-size: 6rem;
+  position: center;
+  color: #444
+}
+
+#ac {   
+  float: right;
+  height: 100%;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  color: #A5F2F3;     
+}
+  
+#brightness {
+  float: left;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  height: 100%;
+  padding: 0px;
+  color: #f9d71c;
+} 
+
+
+/* Weather Descriptions */
+
+.location, .temperature {
+  height: 30vw;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature{
+  flex-direction: column;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 50px;
+}
+
+.degree-section h2 {
+  font-size: 30px;
+}
+
+
+/* Fonts and Text */
+
+#p1 {
+  position: relative;
+  background-color: #ffffff; 
+}
+
+
+h1 {
+  font-size: 4rem;
+  color: #000000;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+
+.h5 {
+  font-size: 1.64rem;
+  line-height: 1;
+  margin: 1.0933333333rem 0 .656rem 0;
+  color: #000; 
+  text-align: center;
+  font-weight: 700;
+  position: center;
+  padding-top: 30px;
+  color: white;   
+}
+  
+
+.p {
+  text-align: center;
+  font-weight: 900;
+  position: center;
+  color: #000;  
+}  
+  
+#invert {   
+  color: #fff;
+  position: cover;
+  padding: 0%;
+  margin: 0%;
+  max-block-size: 500px
+}    
+      
+ 
+/* Input Fields */
+
+.input-group{
+  display:table;
+  width:80%;
+  margin: 0 auto;
+}
+  
+.input-group .input-field,
+.input-group .input-group-addon{
+  display:table;
+  width: 100%;
+} 
+ 
+
+/* The Buttons */
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  height: 1rem;
+  padding-bottom: 2.5rem;
+  padding-top: 1rem;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+  
+.button {
+  top: 40%;
+  bottom: 50%;
+  width: 8rem;
+}
+
+.btn, .btn-large, .btn-small {
+  color: #fff;
+  background-color: #3DCCC7;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  cursor: progress;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif; 
+}
+  
+@media(max-width: 800px) {
+.h1 {
+  font-size: 6rem;
+  background-color: #000;
+}};
+
+@media only screen and (max-width: 992px){
+.nav brand.logo {
+  -webkit-transform: translateX(0%);
+  transform:translateX(0%); 
+}};
+  
+ 
+
+  

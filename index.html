@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Dashboard</title>
+
+    <!-- Materialize CDN -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Fonts Awesome -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55233fae23.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts will go here once we know which ones we'll use -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- <link href="./assets/css/nouislider.min.css" rel="stylesheet">  -->
+
+    <!-- JQuery CDN -->
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+<!-- <style>
+#slider {
+    width: 620px;
+    margin: 100px auto;
+    } 
+</style>         -->
+
+</head>
+<body>
+
+   <!-- NavBar 1 -->
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">Weather Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- NavBar 2 -->
+
+  <nav>      
+    <div class="nav-wrapper">
+     <a href="#!" class="brand-logo center"><i class="large material-icons center" id="brightness_high center">brightness_high</i></a> 
+  </div>
+</nav>
+  
+  <!-- Weather Icons -->
+   
+    <h5 class='h5'>Today's Weather Forecast Is...</h5>
+     <a><i class="medium material-icons ac_unit" id="ac">ac_unit</i><i class="medium material-icons brightness_5" id="brightness">brightness_5</i></a>
+     <a><i class="material-icons ac_unit" id="ac">ac_unit</i><i class="material-icons brightness_5" id="brightness">brightness_5</i></a>
+     <a><i class="large material-icons ac_unit" id="ac">ac_unit</i><i class="large material-icons brightness_5" id="brightness">brightness_5</i></a>
+     <a><i class="medium material-icons ac_unit" id="ac">ac_unit</i><i class="medium material-icons brightness_5" id="brightness">brightness_5</i></a>
+     <a><i class="material-icons ac_unit" id="ac">ac_unit</i><i class="material-icons brightness_5" id="brightness">brightness_5</i></a>
+     <a><i class="large material-icons ac_unit" id="ac">ac_unit</i><i class="large material-icons brightness_5" id="brightness">brightness_5</i></a>
+  
+      
+
+      <!-- result card one -->
+
+      <div class="row"></div>
+      <div class="col s12 m7">
+        <div class="card small blue-grey lighten-5">
+          <div class="card-image">
+            <img src="">
+            <span class="card-title">Card Title</span>
+          </div>
+          <!-- this is the latest news section  -->
+          <div class="latest-news center">
+            <b>Location</b>
+            <hr>
+            <h6 class="article-title center">CITY</h6>
+            <p id="a1" class="article center"></p>
+            <a class="waves-effect waves-light btn cyan accent-4"><i class="material-icons right">cloud</i>refresh</a>
+          </div>
+        </div>
+      </div>
+  
+  
+      <!-- result card two -->
+  
+      <div class="col s12 m7">
+        <div class="card small blue-grey lighten-5">
+          <div class="card-image">
+            <img src="">
+            <span class="card-title">Card Title</span>
+          </div>
+          <!-- this is the latest news section  -->
+          <div class="latest-news center">
+            <b>Location</b>
+            <hr>
+            <h6>STATE</h6>
+            <p id="a2" class="article center"></p>
+            <a class="waves-effect waves-light btn cyan accent-4"><i class="material-icons right">cloud</i>refresh</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- result card three -->
+  
+      <div class="col s12 m7">
+        <div class="card small blue-grey lighten-5">
+          <div class="card-image">
+            <img src="">
+            <span class="card-title">Card Title</span>
+          </div>
+          <!-- this is the latest news section  -->
+          <div class="latest-news center">
+            <b>Location</b>
+            <hr>
+            <h6>COUNTRY</h6>
+            <p id="a3" class="article center"></p>
+            <a class="waves-effect waves-light btn cyan accent-4"><i class="material-icons right">cloud</i>refresh</a>
+          </div>
+        </div>
+      </div>
+
+   <!-- result card four -->
+      
+   <div class="col s12 m7">
+      <div class="card small blue-grey lighten-5">
+        <div class="card-image">
+          <img src="">
+          <span class="card-title">Card Title</span>
+        </div>
+        <!-- this is the latest news section  -->
+        <div class="latest-news center">
+          <b>Latest</b>
+          <hr>
+          <h6 class="article-title">TEMPERATURE</h6>
+          <p id="a4" class="article center"></p>
+          <a class="waves-effect waves-light btn cyan accent-4"><i class="material-icons right">cloud</i>refresh</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- result card five -->
+
+    <div class="col s12 m7">
+      <div class="card small blue-grey lighten-5">
+        <div class="card-image">
+          <img src="">
+          <span class="card-title">Card Title</span>
+        </div>
+        <!-- this is the latest news section  -->
+        <div class="latest-news center">
+          <b>Latest</b>
+          <hr>
+          <h6>HUMIDITY</h6>
+          <p id="a5" class="article center"></p>
+          <a class="waves-effect waves-light btn cyan accent-4"><i class="material-icons right">cloud</i>refresh</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- result card six -->
+
+    <div class="col s12 m7">
+      <div class="card small blue-grey lighten-5">
+        <div class="card-image">
+          <img src="">
+          <span class="card-title">Card Title</span>
+        </div>
+        <!-- this is the latest news section  -->
+        <div class="latest-news center">
+          <b>Latest</b>
+          <hr>
+          <h6>WIND SPEED</h6>
+          <p id="a6" class="article center"></p>
+          <a class="waves-effect waves-light btn cyan accent-4"><i class="material-icons right">cloud</i>refresh</a>
+        </div>
+      </div>
+    </div>
+
+<!-- result card seven -->
+
+<div class="col s12 m7">
+    <div class="card small blue-grey lighten-5">
+      <div class="card-image">
+        <img src="">
+        <span class="card-title">Card Title</span>
+      </div>
+      <!-- this is the latest news section  -->
+      <div class="latest-news center">
+        <b>Coordinates</b>
+        <hr>
+        <h6>LATITUDE</h6>
+        <p id="a7" class="article center"></p>
+        <a class="waves-effect waves-light btn cyan accent-4"><i class="material-icons right">cloud</i>refresh</a>
+      </div>
+    </div>
+  </div>
+
+      <!-- result card eight -->
+  
+      <div class="col s12 m7">
+        <div class="card small blue-grey lighten-5">
+          <div class="card-image">
+            <img src="">
+            <span class="card-title">Card Title</span>
+          </div>
+          <!-- this is the latest news section  -->
+          <div class="latest-news center">
+            <b>Coordinates</b>
+            <hr>
+            <h6 class="article-title">LONGITUDE</h6>
+            <p id="a8" class="article center"></p>
+            <a class="waves-effect waves-light btn cyan accent-4"><i class="material-icons right">cloud</i>refresh</a>
+          </div>
+        </div>
+      </div>
+  
+  
+      <!-- result card nine -->
+  
+      <div class="col s12 m7">
+        <div class="card small blue-grey lighten-5">
+          <div class="card-image">
+            <img src="">
+            <span class="card-title">Card Title</span>
+          </div>
+          <!-- this is the latest news section  -->
+          <div class="latest-news center">
+            <b>Coordinates</b>
+            <hr>
+            <h6>SUNRISE</h6>
+            <p id="a9" class="article center"></p>
+            <a class="waves-effect waves-light btn cyan accent-4"><i class="material-icons right">cloud</i>refresh</a>
+          </div>
+        </div>
+      </div>       
+        
+  <script src="./assets/js/app.js"></script>
+
+
+  </body>
+</html>
